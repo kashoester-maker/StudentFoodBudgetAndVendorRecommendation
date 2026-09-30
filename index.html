@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Student Food Budget & Vendor Recommendation
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>
+            Student Food Budget
+        </h1>
+
+        <p>
+            & Vendor Recommendation
+        </p>
+
+    </header>
+
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#food">Find Food</a>
+
+        <a href="#vendors">Vendors</a>
+
+        <a href="#preferences">Preferences</a>
+
+        <a href="#reviews">Reviews</a>
+
+    </nav>
+
+
+    <!-- HOME -->
+
+    <section id="home" class="hero">
+
+        <div>
+
+            <h2>
+                Welcome, Student 👋
+            </h2>
+
+            <p>
+                Find affordable meals and food vendors
+                that fit your budget.
+            </p>
+
+            <button onclick="showFood()">
+                Find Affordable Food
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FIND FOOD -->
+
+    <section id="food" class="section">
+
+        <h2>
+            Find Affordable Food 💰
+        </h2>
+
+        <p>
+            Enter your budget to find meals
+            you can afford.
+        </p>
+
+        <input
+            type="number"
+            id="budget"
+            placeholder="Enter your budget"
+        >
+
+        <button onclick="findFood()">
+            Find Meals
+        </button>
+
+        <div id="foodResults"></div>
+
+    </section>
+
+
+    <!-- VENDORS -->
+
+    <section id="vendors" class="section">
+
+        <h2>
+            Food Vendors 🍔
+        </h2>
+
+
+        <div class="card">
+
+            <h3>
+                House of Hotdog
+            </h3>
+
+            <p>
+                📍 PolyHeights, Room 404
+            </p>
+
+            <p>
+                🕐 11:30 - 16:00
+            </p>
+
+            <button>
+                View Meals
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Nambo Kitchen
+            </h3>
+
+            <p>
+                📍 Science Building, Room 100
+            </p>
+
+            <p>
+                🕐 08:00 - 17:00
+            </p>
+
+            <button>
+                View Meals
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PREFERENCES -->
+
+    <section id="preferences" class="section">
+
+        <h2>
+            Food Preferences ❤️
+        </h2>
+
+        <p>
+            Choose your preferred food type:
+        </p>
+
+        <label>
+            <input type="checkbox">
+            Fast Food
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox">
+            Traditional Food
+        </label>
+
+        <br>
+
+        <label>
+            <input type="checkbox">
+            Vegetarian
+        </label>
+
+        <br><br>
+
+        <select>
+
+            <option>
+                Preference Level
+            </option>
+
+            <option>
+                Low
+            </option>
+
+            <option>
+                Medium
+            </option>
+
+            <option>
+                High
+            </option>
+
+        </select>
+
+        <br><br>
+
+        <button>
+            Save Preferences
+        </button>
+
+    </section>
+
+
+    <!-- REVIEWS -->
+
+    <section id="reviews" class="section">
+
+        <h2>
+            Rate a Vendor ⭐
+        </h2>
+
+        <select id="rating">
+
+            <option value="5">
+                ★★★★★
+            </option>
+
+            <option value="4">
+                ★★★★
+            </option>
+
+            <option value="3">
+                ★★★
+            </option>
+
+            <option value="2">
+                ★★
+            </option>
+
+            <option value="1">
+                ★
+            </option>
+
+        </select>
+
+        <textarea
+            id="comment"
+            placeholder="Write your review..."
+        ></textarea>
+
+        <button onclick="submitReview()">
+            Submit Review
+        </button>
+
+        <p id="reviewMessage"></p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Student Food Budget & Vendor Recommendation
+        </p>
+
+        <p>
+            Student Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
